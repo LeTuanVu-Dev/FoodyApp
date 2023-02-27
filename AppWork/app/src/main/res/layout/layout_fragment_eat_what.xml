@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical"
+    android:background="@color/background_main"
+    tools:context=".View.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/group_tab_radio"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_tab_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/first_new"
+            android:textAlignment="center"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:drawableTint="@color/background_main_tab"
+            android:drawablePadding="-10dp"
+            android:textColor="@drawable/custom_change_text_tab_main"
+            android:checked="true"
+            android:button="@android:color/transparent"
+            tools:ignore="UnusedAttribute" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/background_main"/>
+
+        <RadioButton
+            android:id="@+id/radio_tab_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/category"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:drawablePadding="-10dp"
+            android:drawableTint="@color/background_main_tab"
+            android:textColor="@drawable/custom_change_text_tab_main"
+            android:button="@android:color/transparent"
+            tools:ignore="UnusedAttribute" />
+
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="match_parent"
+            android:background="@color/background_main"/>
+
+        <RadioButton
+            android:id="@+id/radio_tab_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="area"
+            android:textAlignment="center"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:drawableTint="@color/background_main_tab"
+            android:drawablePadding="-10dp"
+            android:textColor="@drawable/custom_change_text_tab_main"
+            android:button="@android:color/transparent"
+            tools:ignore="UnusedAttribute" />
+    </RadioGroup>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nearby"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:drawableLeft="@drawable/nearby"
+                    android:gravity="left|center"
+                    android:background="@color/white"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delivery"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:drawableLeft="@drawable/order"
+                    android:gravity="left|center"
+                    android:background="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/game_and_fun"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:drawableLeft="@drawable/gameandfun"
+                    android:gravity="left|center"
+                    android:background="@color/white"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/evaluate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:drawableLeft="@drawable/review"
+                    android:gravity="left|center"
+                    android:background="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/blogs"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@color/white"
+                    android:drawableLeft="@drawable/blog"
+                    android:gravity="left|center"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/top_members"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:drawableLeft="@drawable/user"
+                    android:gravity="left|center"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

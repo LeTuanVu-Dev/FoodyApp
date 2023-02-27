@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical"
+    android:background="@color/background_main"
+    tools:context=".View.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/chuf"
+            tools:ignore="ContentDescription" />
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_where"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/where"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_where"
+                android:padding="@dimen/_3sdp"
+                android:textColor="@drawable/custom_text_change_radio_button"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/radio_eat_what"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eat_what"
+                android:button="@android:color/transparent"
+                android:background="@drawable/custom_radio_eat_what"
+                android:textColor="@drawable/custom_text_change_radio_button"
+                android:padding="@dimen/_3sdp"
+                />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgThemQuanAn"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_add_white_24dp"
+            tools:ignore="ContentDescription"
+           />
+    </androidx.appcompat.widget.Toolbar>
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/viewpager_main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </androidx.viewpager.widget.ViewPager>
+</LinearLayout>

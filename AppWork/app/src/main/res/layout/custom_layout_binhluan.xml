@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/containerBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_3sdp"
+        tools:ignore="MissingConstraints">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageUser"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:src="@drawable/hinhtest"
+            android:layout_margin="@dimen/_3sdp"
+            />
+
+        <LinearLayout
+            android:paddingStart="@dimen/_7sdp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/txtTieudebinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gogi House"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16sdp"
+                />
+
+            <TextView
+                android:id="@+id/txtNoidungbinhluan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36 Triệu Quang Phục Quận 3"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtChamdiem"
+            android:paddingStart="@dimen/_5sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:text="7.0"
+            android:gravity="end"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHinhBinhLuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
